@@ -49,7 +49,7 @@ I would also:
 4. Add API Key to settings.json file
 
 5. Start server
-`cd ~/go/src/github.com/email && go build && ./emails`
+`cd ~/go/src/github.com/emails && go build && ./emails`
 
 6. Curl
 ```
