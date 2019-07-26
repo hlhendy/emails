@@ -46,6 +46,7 @@ func (e *Handler) Send(w http.ResponseWriter, r *http.Request, ps httprouter.Par
 	switch {
 	case request.RecipientName == "":
 		http.Error(w, "INVALID_ARG_TO_NAME_REQUIRED", http.StatusBadRequest)
+		return
 	case request.RecipientEmail == "":
 		http.Error(w, "INVALID_ARG_TO_REQUIRED", http.StatusBadRequest)
 		return
