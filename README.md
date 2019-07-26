@@ -26,11 +26,13 @@ There are many things I would do differently given more time. First, I didn't re
 I would also:
 * add auth to the endpoint, as well as encrypt the api_key vs having it in plain text in the settings file.
 
+* use the from and to names
+
 * add more validation to the html being passed in.
 
-* implemented a second email provider (it looks like Mandrill is no longer free; Mailchip would not allow me to create an api key with my free account).
+* implement a second email provider (it looks like Mandrill is no longer free; Mailchip would not allow me to create an api key with my free account).
 
-* genericized the NewRequest function.
+* genericize the NewRequest function.
 
 ## How to Install & Run
  1. Install go (this may vary by package manager)
@@ -39,11 +41,13 @@ I would also:
 2. Create go workspace
 `mkdir ~/go`
 `cd ~/go && mkdir src`
+`cd ~/go/src && mkdir github.com`
 
 3. Clone into go path
-`cd ~/go/src/ && git clone git@github.com:hlhendy/emails.git`
+`cd ~/go/src/github.com && git clone git@github.com:hlhendy/emails.git`
 
 4. Add API Key to settings.json file
+`cd emails`
 
 5. Start server
 `go build && ./emails`
