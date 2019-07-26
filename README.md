@@ -39,18 +39,17 @@ I would also:
  ex. `brew install go`
 
 2. Create go workspace
-`mkdir ~/go`
-`cd ~/go && mkdir src`
-`cd ~/go/src && mkdir github.com`
+* `mkdir ~/go`
+* `cd ~/go && mkdir src`
+* `cd ~/go/src && mkdir github.com`
 
 3. Clone into go path
 `cd ~/go/src/github.com && git clone git@github.com:hlhendy/emails.git`
 
 4. Add API Key to settings.json file
-`cd emails`
 
 5. Start server
-`go build && ./emails`
+`cd ~/go/src/github.com/email && go build && ./emails`
 
 6. Curl
 ```
