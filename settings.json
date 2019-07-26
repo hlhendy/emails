@@ -1,0 +1,17 @@
+{
+    "default_provider":"mailgun",
+    "log_level":"error",
+    "port":":8080",
+    "providers": [
+	{
+	    "name":"mailgun",
+	    "base_url":"api.mailgun.net/v3/sandbox6d391af3079945e5aa1b32cc05297bda.mailgun.org",
+	    "api_key":""
+	},
+	{
+	    "name":"mandrill",
+	    "base_url":"",
+	    "api_key":""
+	}
+    ]
+}
