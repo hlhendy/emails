@@ -10,8 +10,8 @@ import (
 )
 
 type Mailgun struct {
-	BaseURL string `json:"base_url"`
-	APIKey  string `json:"sending_domain"`
+	BaseURL string
+	APIKey  string
 }
 
 func NewMailgun(apiKey, baseURL string) *Mailgun {
