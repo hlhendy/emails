@@ -17,9 +17,6 @@
 └── settings.json
 ```
 
-## Language Chosen
-I chose to write this in Go because of it's readbility and the fact that it's what I've been using most often the last couple of years.
-
 ## Tradeoffs
 There are many things I would do differently given more time. First, I didn't really have time to write good tests. I would add in unit tests for each function. I would take advantage of the Message interface to mock out responses from the email providers. I included one very basic example of how I might structure a test, but it's not complete in that it doesn't test all functionality.
 
